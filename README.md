@@ -4,7 +4,7 @@ A static portfolio website hosted on **Amazon S3** and delivered globally throug
 
 **Live site:** https://d2tt07sy77xe1b.cloudfront.net/
 
-![Architecture diagram](portfolio-site.png)
+![Architecture diagram](portfolio-site-architecture.png)
 
 ## Overview
 
@@ -66,7 +66,7 @@ portfolio-site/
 ├── index.html          # the site
 ├── 404.html            # custom error page
 ├── deploy.sh           # sync to S3 + CloudFront invalidation
-├── portfolio-site.png  # architecture diagram (draw.io)
+├── portfolio-site-architecture.png  # architecture diagram (draw.io)
 └── README.md
 ```
 

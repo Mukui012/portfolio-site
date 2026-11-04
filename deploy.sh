@@ -8,7 +8,7 @@ DISTRIBUTION_ID="E11RE2TKCYD1R9"
 
 aws s3 sync . "s3://${BUCKET}" \
   --exclude ".git/*" --exclude ".gitignore" --exclude ".gitattributes" \
-  --exclude "*.md" --exclude "*.png" --exclude "deploy.sh"
+  --exclude "*.md" --exclude "deploy.sh"
 
 aws cloudfront create-invalidation \
   --distribution-id "$DISTRIBUTION_ID" \

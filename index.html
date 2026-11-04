@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spencer Mukui - Cloud Engineer</title>
+    <title>Spencer Mukui | IT Support and Cloud</title>
+    <meta name="description" content="IT support professional in Nairobi, Kenya. KCNA and Google IT Support certified, building hands-on AWS projects on the AWS re/Start program.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Spencer Mukui | IT Support and Cloud">
+    <meta property="og:description" content="NOC incident response, field-system support and hands-on AWS projects. KCNA and Google IT Support certified.">
+    <meta property="og:url" content="https://d2tt07sy77xe1b.cloudfront.net/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
     <style>
         * {
             margin: 0;
@@ -14,6 +20,10 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
+        }
+        a:focus-visible {
+            outline: 3px solid #f5b942;
+            outline-offset: 2px;
         }
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -28,6 +38,25 @@
         header p {
             font-size: 1.2em;
             opacity: 0.9;
+        }
+        .header-links {
+            margin-top: 24px;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #5a3d99;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 5px;
+            margin: 4px 6px;
+        }
+        .btn.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 8px 20px;
         }
         nav {
             background: #333;
@@ -45,7 +74,7 @@
             color: #667eea;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -58,6 +87,32 @@
             color: #667eea;
             border-bottom: 2px solid #667eea;
             padding-bottom: 10px;
+        }
+        .job {
+            margin-bottom: 28px;
+        }
+        .job-head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 4px 16px;
+            margin-bottom: 8px;
+        }
+        .job-head h3 {
+            font-size: 1.15em;
+        }
+        .job-head .where {
+            color: #555;
+        }
+        .job-head .when {
+            color: #667eea;
+            font-weight: bold;
+        }
+        .job ul {
+            padding-left: 22px;
+        }
+        .job li {
+            margin-bottom: 6px;
         }
         .cert-badge {
             display: inline-block;
@@ -92,11 +147,22 @@
         .project {
             background: #f4f4f4;
             padding: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             border-left: 4px solid #667eea;
         }
         .project h3 {
+            margin-bottom: 12px;
+        }
+        .project p {
             margin-bottom: 10px;
+        }
+        .project img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 14px 0;
+            border: 1px solid #ddd;
+            background: white;
         }
         .tags {
             margin: 12px 0 4px;
@@ -110,8 +176,11 @@
             font-size: 0.85em;
             margin: 0 6px 6px 0;
         }
+        .project .project-links {
+            margin: 12px 0 0;
+        }
         .project-links a {
-            color: #667eea;
+            color: #5568d3;
             font-weight: bold;
             text-decoration: none;
             margin-right: 16px;
@@ -127,7 +196,7 @@
             margin-top: 40px;
         }
         footer a {
-            color: #667eea;
+            color: #aab4ff;
             text-decoration: none;
         }
     </style>
@@ -135,76 +204,97 @@
 <body>
     <header>
         <h1>Spencer Mukui</h1>
-        <p>Cloud Infrastructure Engineer | KCNA Certified | AWS Enthusiast</p>
+        <p>IT Support | Networking | AWS | KCNA Certified</p>
+        <div class="header-links">
+            <a class="btn" href="Spencer_Mukui_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn secondary" href="https://github.com/Mukui012" target="_blank" rel="noopener">GitHub</a>
+        </div>
     </header>
 
     <nav>
         <a href="#about">About</a>
-        <a href="#focus">Focus Areas</a>
-        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#focus">Focus Areas</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>I'm a cloud infrastructure engineer based in Nairobi, Kenya, with 3+ years of experience managing high-availability infrastructure for enterprise and government systems. I specialize in AWS, Kubernetes, and cloud-native technologies.</p>
-            <p style="margin-top: 15px;">I'm passionate about building scalable, reliable systems and sharing knowledge with the developer community.</p>
+            <p>I'm an IT support professional based in Nairobi, Kenya, with 2+ years of first-line troubleshooting: NOC incident response at the ICT Authority, field-system support at Kenya Power, and support for 30+ individual and small-business clients.</p>
+            <p>I'm Google IT Support Professional and KCNA certified, currently on the AWS re/Start program and preparing for the AWS Certified Cloud Practitioner exam. I'm building my cloud skills hands-on and documenting what I build on GitHub.</p>
         </section>
 
-        <section id="focus">
-            <h2>Focus Areas</h2>
-            <div class="focus-grid">
-                <div class="focus-card">
-                    <h3>Cloud (AWS)</h3>
-                    <p>Hands-on with S3, CloudFront and IAM. Built a multi-tier environment using EC2, RDS and VPC.</p>
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-head">
+                    <h3>Freelance Technical Support <span class="where">| Nairobi, Kenya</span></h3>
+                    <span class="when">Feb 2025 to Oct 2026</span>
                 </div>
-                <div class="focus-card">
-                    <h3>Containers and Kubernetes</h3>
-                    <p>KCNA certified. Practising with Minikube and kubectl on a Linux VM.</p>
-                </div>
-                <div class="focus-card">
-                    <h3>Linux and Networking</h3>
-                    <p>Daily Ubuntu use. Routing, firewall and DNS work from my time at the ICT Authority.</p>
-                </div>
-                <div class="focus-card">
-                    <h3>IT Support and Operations</h3>
-                    <p>L2 support and asset data integrity at Kenya Power, with troubleshooting guides and SOPs.</p>
-                </div>
+                <ul>
+                    <li>First point of contact for 30+ individual and small-business clients, finding the root cause of Windows, software, networking, connectivity and peripheral issues and walking each client through the fix in plain language.</li>
+                    <li>Configured client PCs, applications and networks, and advised on hardware, software and security upgrades.</li>
+                </ul>
             </div>
-        </section>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div>
-                <a class="cert-badge" href="https://www.credly.com/badges/0e9356f6-aa78-4c09-bfa4-5c53d51b4795/public_url" target="_blank" rel="noopener">KCNA Certified (2026)</a>
-                <a class="cert-badge" href="https://www.credly.com/badges/6b4b99ca-aea7-41f5-a3d0-812aa9798b67/public_url" target="_blank" rel="noopener">Google IT Support Professional (2025)</a>
-                <span class="cert-badge pending">AWS Cloud Practitioner (exam in progress)</span>
+            <div class="job">
+                <div class="job-head">
+                    <h3>Infrastructure Operations Analyst <span class="where">| Kenya Power and Lighting Company</span></h3>
+                    <span class="when">Oct 2023 to Feb 2025</span>
+                </div>
+                <ul>
+                    <li>Acted as the team's primary technical troubleshooter, resolving field-system synchronization issues, data inconsistencies and mobile platform failures so field crews could keep working.</li>
+                    <li>Audited and validated thousands of electricity assets across 12 counties (roughly 60 to 70 a day), flagging bypassed meters, faulty equipment and undocumented connections that were leaking revenue.</li>
+                    <li>Accelerated billing corrections and service restoration by coordinating finance, operations, maintenance and customer service teams across distributed regions.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-head">
+                    <h3>Network Operations and Technical Support Intern <span class="where">| ICT Authority</span></h3>
+                    <span class="when">May 2022 to Sep 2022</span>
+                </div>
+                <ul>
+                    <li>Diagnosed and fixed a critical, undocumented CIDR configuration conflict that was silently disrupting connectivity for government ministries, restoring full network performance.</li>
+                    <li>Monitored the Government Common Core Network (GCCN) from the NOC, running real-time incident response, endpoint diagnostics and root cause analysis.</li>
+                    <li>Cut recurring NOC issue-resolution time by roughly 60% by writing troubleshooting documentation and support guides adopted across the technical support team.</li>
+                </ul>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Featured Projects</h2>
+            <h2>Projects</h2>
+
             <div class="project">
                 <h3>3-Tier Web Application on AWS</h3>
-                <p>Deployed a scalable multi-tier architecture using EC2, an Application Load Balancer, RDS, and Auto-Scaling Groups. Implemented security best practices with VPC, security groups, and IAM roles.</p>
+                <p><strong>What I built:</strong> A custom VPC in af-south-1 with public and private subnets across three Availability Zones, an Application Load Balancer in front of two EC2 instances, and MySQL on RDS in a private subnet, monitored with CloudWatch.</p>
+                <p><strong>How it's secured:</strong> The database sits in a private subnet with no internet route, and security groups only allow traffic from the layer above.</p>
+                <p><strong>How I troubleshot it:</strong> I used netcat to confirm network connectivity to the database before testing authentication, so I could tell network problems apart from credential problems.</p>
+                <p><strong>Status:</strong> Torn down after testing. Next, I'm rebuilding it with an Auto Scaling Group and documented failure tests.</p>
                 <div class="tags">
-                    <span class="tag">EC2</span>
-                    <span class="tag">RDS</span>
-                    <span class="tag">Application Load Balancer</span>
                     <span class="tag">VPC</span>
-                    <span class="tag">Auto Scaling</span>
+                    <span class="tag">EC2</span>
+                    <span class="tag">Application Load Balancer</span>
+                    <span class="tag">RDS</span>
+                    <span class="tag">CloudWatch</span>
                     <span class="tag">Security Groups</span>
-                    <span class="tag">IAM</span>
                 </div>
                 <p class="project-links">
                     <a href="https://github.com/Mukui012/aws-multi-tier-vpc-architecture" target="_blank" rel="noopener">View code</a>
                 </p>
             </div>
+
             <div class="project">
-                <h3>Global Static Website (This Site!)</h3>
-                <p>Built and deployed a globally distributed static site using S3 and CloudFront. Optimized for performance and security with edge caching.</p>
+                <h3>Global Static Website (This Site)</h3>
+                <p><strong>What I built:</strong> A static site hosted in S3 and served worldwide through CloudFront, with HTTP redirected to HTTPS and a custom 404 page.</p>
+                <img src="assets/portfolio-site-architecture.png" alt="Architecture diagram: users connect over HTTPS to CloudFront, which fetches from an S3 bucket in us-east-1 over HTTP">
+                <p><strong>How it's deployed:</strong> A bash script syncs the files to S3 and invalidates the CloudFront cache, so every change goes live from one command.</p>
+                <p><strong>What I learned:</strong> CloudFront keeps serving cached copies until they expire or are invalidated. I confirmed the cache behaviour from the response headers (a Miss, then a Hit).</p>
+                <p><strong>Trade-off:</strong> The bucket is public through a bucket policy. The next step is a private bucket with Origin Access Control.</p>
                 <div class="tags">
                     <span class="tag">S3</span>
                     <span class="tag">CloudFront</span>
@@ -220,18 +310,51 @@
             </div>
         </section>
 
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div>
+                <a class="cert-badge" href="https://www.credly.com/badges/0e9356f6-aa78-4c09-bfa4-5c53d51b4795/public_url" target="_blank" rel="noopener">KCNA Certified (2026)</a>
+                <a class="cert-badge" href="https://www.credly.com/badges/6b4b99ca-aea7-41f5-a3d0-812aa9798b67/public_url" target="_blank" rel="noopener">Google IT Support Professional (2025)</a>
+                <span class="cert-badge pending">AWS Cloud Practitioner (exam in progress)</span>
+                <span class="cert-badge pending">AWS re/Start, Ajira Digital (Aug to Nov 2026)</span>
+            </div>
+        </section>
+
+        <section id="focus">
+            <h2>Focus Areas</h2>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <h3>Cloud (AWS)</h3>
+                    <p>VPC, EC2, ALB, RDS, S3, CloudFront, CloudWatch and IAM, using the console and the AWS CLI.</p>
+                </div>
+                <div class="focus-card">
+                    <h3>Containers and Kubernetes</h3>
+                    <p>KCNA certified. Practising with Minikube and kubectl on a Linux VM.</p>
+                </div>
+                <div class="focus-card">
+                    <h3>Linux and Networking</h3>
+                    <p>Daily Linux command line on Ubuntu. TCP/IP, DNS, DHCP, CIDR and subnetting, LAN and Wi-Fi from my NOC work at the ICT Authority.</p>
+                </div>
+                <div class="focus-card">
+                    <h3>IT Support and Operations</h3>
+                    <p>Troubleshooting, root cause analysis, incident response and clear documentation across NOC, field-system and client support.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="contact">
             <h2>Get In Touch</h2>
             <p><strong>Email:</strong> spencermukui@gmail.com</p>
             <p><strong>Phone:</strong> +254 727 350098</p>
             <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/spencer-mukui-677b2218a/">linkedin.com/in/spencer-mukui</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/Mukui012">github.com/Mukui012</a></p>
+            <p><strong>CV:</strong> <a href="Spencer_Mukui_CV.pdf" target="_blank" rel="noopener">Download as PDF</a></p>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2026 Spencer Mukui. Built with AWS S3 + CloudFront.</p>
-        <p>Served globally from edge locations worldwide.</p>
+        <p>Source on <a href="https://github.com/Mukui012/portfolio-site">GitHub</a></p>
     </footer>
 </body>
 </html>
